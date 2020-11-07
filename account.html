@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trash2Cash | Ecommerse Site</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	
+
+</head>
+<body>
+	<div class="header">
+      <div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<img src="logo1.png" width="125px">
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="index.html"><b>Home</b></a></li>
+					<li><a href="details.html"><b>Details</b></a></li>
+					<li><a href="account.html"><b>Login/Register</b></a></li>
+					<li><a href="contact.html"><b>Add Address</b></a></li>
+				</ul>
+			</nav>
+			<img src="menu222.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	  </div>
+	 
+
+	  <div class = "account-page">
+	  	  <div class="container">
+	  	  	<div class="row">
+	  	  		<div class="col-2">
+	  	  			<img src="cleanIndia.png" width="70%">
+	  	  		</div>
+
+	  	  		<div class="col-2">
+	  	  			<div class="form-container">
+	  	  				<div class="form-btn">
+	  	  					<span onclick="Login()"> Login </span>
+	  	  					<span onclick="Register()"> Register </span>
+	  	  					<hr id="Indicator">
+	  	  				</div>
+
+	  	  				<form id="LoginForm">
+	  	  					<input type="text" placeholder="Username">
+	  	  					<input type="Password" placeholder="Password">
+	  	  					<button type="Submit" class="btn">Login</button>
+	  	  					<a href="">Forget password</a>
+	  	  				</form>
+	  	  				<form id="RegForm">
+	  	  					<input type="text" placeholder="Username"> 
+	  	  					<input type="email" placeholder="Email">
+	  	  					<input type="Password" placeholder="Password">
+	  	  					<button type="Submit" class="btn-primary">Register</button>
+	  	  					
+	  	  				</form>
+	  	  			</div>
+	  	  		</div>
+	  	  	</div>
+	  	  </div>
+      </div>
+ <div class="footer">
+ 	<div class="container">
+	    <div class="row">
+		 
+	        <div class="footer-col-1">
+	   
+				<h3>Visit our site.</h3>
+				<p> Trash2Cash, a step for swacch and swastha Bharat.</p> 
+				<p> Our purpose is to provide a better way to dump Waste</p>
+			</div>
+			<div class="footer-col-2">
+				<img src="logo1.png">
+			</div>
+			<div class="footer-col-3">
+				<h3>Contact Us</h3>
+				<ul>
+					<li>Contact No.: 8765148916</li>
+					<li>Whatsapp us : 9260904249</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow Us</h3>
+				<ul>
+					<li>Facebook : spilldrops</li>
+					<li>Instagram : @spill_drops</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>		
+
+
+<!--------js for toggle menu-------------->
+ <script>
+ 	var MenuItems = documents.getElementById("MenuItems");
+ 	MenuItems.style.maxheight = "0px";
+
+ 	function menutoggle(){
+ 		if(MenuItems.style.maxheight == "0px")
+ 		{
+ 			 MenuItems.style.maxheight = "200px"
+ 		}
+ 		else
+ 		{
+ 			MenuItems.style.maxheight = "0px"
+ 		}
+ 	}
+
+ </script>
+
+ <script>
+ 	var LoginForm = document.getElementById("LoginForm");
+ 	var RegForm = document.getElementById("RegForm");
+ 	var Indicator = document.getElementById("Indicator");
+
+ 	 function Register(){
+
+ 	 	RegForm.style.transform = "translateX(0px)";
+ 	 	LoginForm.style.transform = "translateX(0px)";
+ 	 	Indicator.style.transform = "translateX(100px)";
+
+ 	 }
+ 	 function Login(){
+
+ 	 		RegForm.style.transform = "translateX(300px)";
+ 	 	    LoginForm.style.transform = "translateX(300px)";
+ 	 	    Indicator.style.transform = "translateX(0px)";
+ 	 }
+
+
+ </script>
+
+</body>
